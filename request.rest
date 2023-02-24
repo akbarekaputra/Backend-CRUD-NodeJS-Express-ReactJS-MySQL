@@ -1,0 +1,31 @@
+GET http://localhost:3333/users
+
+###
+GET http://localhost:3333/users/2
+
+###
+POST http://localhost:3333/users/add
+Content-Type: application/json
+
+{
+    "nik": 1234567893,
+    "name": "Akbar Eka Putra 2",
+    "age": 182,
+    "email": "akbar@example.com2",
+    "adress": "JL. Pesona Anggrek H. 2"
+}
+
+###
+PATCH http://localhost:3333/users/edit/2
+Content-Type: application/json
+
+{
+    "nik": 2,
+    "name": "Akbar",
+    "age": 18,
+    "email": "akbar@example.com",
+    "adress": "JL. Pesona Anggrek H."
+}
+
+###
+DELETE http://localhost:3333/users/delete/2
