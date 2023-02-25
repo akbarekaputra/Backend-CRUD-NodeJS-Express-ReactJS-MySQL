@@ -1,9 +1,10 @@
+# get users
 GET http://localhost:3333/users
 
-###
+### get user by id
 GET http://localhost:3333/users/2
 
-###
+### add user
 POST http://localhost:3333/users/add
 Content-Type: application/json
 
@@ -15,7 +16,7 @@ Content-Type: application/json
     "adress": "JL. Pesona Anggrek H. 2"
 }
 
-###
+### edit user
 PATCH http://localhost:3333/users/edit/2
 Content-Type: application/json
 
@@ -27,5 +28,5 @@ Content-Type: application/json
     "adress": "JL. Pesona Anggrek H."
 }
 
-###
+### delete user
 DELETE http://localhost:3333/users/delete/2
